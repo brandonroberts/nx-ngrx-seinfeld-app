@@ -1,0 +1,14 @@
+<h2>Quotes</h2>
+
+<div *ngFor="let quote of quotes$ | async">
+  <div>
+    {{ quote.quote }}
+  </div>
+  <div>
+    Author: {{ quote.author }}
+  </div>
+  <div>
+    Season {{ quote.season }} Episode {{ quote.episode }}
+  </div>
+  <br/>
+</div>

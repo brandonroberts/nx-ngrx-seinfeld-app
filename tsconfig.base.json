@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@seinfeld/quotes/data-access": ["libs/quotes/data-access/src/index.ts"],
+      "@seinfeld/quotes/page": ["libs/quotes/page/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

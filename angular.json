@@ -142,6 +142,56 @@
           }
         }
       }
+    },
+    "quotes-data-access": {
+      "projectType": "library",
+      "root": "libs/quotes/data-access",
+      "sourceRoot": "libs/quotes/data-access/src",
+      "prefix": "seinfeld",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/quotes/data-access/src/**/*.ts",
+              "libs/quotes/data-access/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/quotes/data-access"],
+          "options": {
+            "jestConfig": "libs/quotes/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "quotes-page": {
+      "projectType": "library",
+      "root": "libs/quotes/page",
+      "sourceRoot": "libs/quotes/page/src",
+      "prefix": "seinfeld",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/quotes/page/src/**/*.ts",
+              "libs/quotes/page/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/quotes/page"],
+          "options": {
+            "jestConfig": "libs/quotes/page/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
